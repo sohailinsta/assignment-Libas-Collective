@@ -40,3 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
+/* app/globals.css (small tweaks) */
+body { padding-top: 1rem; }
+.container { max-width: 1100px; }

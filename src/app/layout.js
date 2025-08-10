@@ -1,32 +1,23 @@
-// app/layout.js
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./globals.css";
+import "./global.css";
+import Providers from "../components/Providers";
+import ProtectedRoute from "../components/ProtectedRoute";
 
 export const metadata = {
-  title: "My Web Store",
-  description: "A small SEO-friendly Next.js storefront",
+  title: "My Store",
+  description: "An SEO optimized Next.js web storefront",
 };
 
 export default function RootLayout({ children }) {
+  // You may want to skip ProtectedRoute on /login and /register pages if they share this layout,
+  // but simplest is to place login/register in a separate folder with a different layout.
+
   return (
     <html lang="en">
       <body>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container">
-            <a className="navbar-brand" href="/">
-              My Store
-            </a>
-            <div>
-              <a className="nav-link d-inline-block" href="/products">
-                Products
-              </a>
-              <a className="nav-link d-inline-block" href="/cart">
-                Cart
-              </a>
-            </div>
-          </div>
-        </nav>
-        <main>{children}</main>
+        <Providers>
+          <ProtectedRoute>{children}</ProtectedRoute>
+        </Providers>
       </body>
     </html>
   );

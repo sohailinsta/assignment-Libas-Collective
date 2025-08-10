@@ -1,0 +1,75 @@
+[
+  {
+    "id": "blue-jeans",
+    "name": "Blue Jeans",
+    "description": "Comfortable blue jeans for everyday wear.",
+    "price": 39.99,
+    "images": [
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "red-shirt",
+    "name": "Red Shirt",
+    "description": "Stylish red shirt to brighten your wardrobe.",
+    "price": 29.99,
+    "images": [
+      "https://images.unsplash.com/photo-1520975920646-4c24dca3d77d?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "black-sneakers",
+    "name": "Black Sneakers",
+    "description": "Sleek black sneakers for any occasion.",
+    "price": 59.99,
+    "images": [
+      "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "leather-belt",
+    "name": "Leather Belt",
+    "description": "Genuine leather belt with classic buckle.",
+    "price": 19.99,
+    "images": [
+      "https://images.unsplash.com/photo-1555529669-337b9f0d8fdd?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "white-tshirt",
+    "name": "White T-Shirt",
+    "description": "Soft cotton white t-shirt, perfect for casual wear.",
+    "price": 14.99,
+    "images": [
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "denim-jacket",
+    "name": "Denim Jacket",
+    "description": "Classic denim jacket with button details.",
+    "price": 69.99,
+    "images": [
+      "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "sunglasses",
+    "name": "Sunglasses",
+    "description": "Polarized sunglasses to protect your eyes.",
+    "price": 24.99,
+    "images": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60"
+    ]
+  },
+  {
+    "id": "backpack",
+    "name": "Backpack",
+    "description": "Durable backpack for travel and daily use.",
+    "price": 49.99,
+    "images": [
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=60"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://your-deploy-url.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://your-deploy-url.vercel.app/products</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://your-deploy-url.vercel.app/products/red-shirt</loc>
+    <lastmod>2025-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://your-deploy-url.vercel.app/products/blue-jeans</loc>
+    <lastmod>2025-07-20</lastmod>
+  </url>
+</urlset>

@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../components/AuthContext";
 
 export default function RegisterPage() {
   const { register } = useAuth();
@@ -24,30 +25,40 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="container mt-5">
-      <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="form-control mb-3"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          className="form-control mb-3"
-        />
-        {error && <div className="alert alert-danger">{error}</div>}
-        <button type="submit" className="btn btn-primary">
-          Register
-        </button>
-      </form>
+    <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+      <div className="card p-4 shadow-lg" style={{ width: "400px" }}>
+        <h2 className="text-center mb-4">Register</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="form-control mb-3"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            className="form-control mb-3"
+          />
+          {error && <div className="alert alert-danger">{error}</div>}
+          <button type="submit" className="btn btn-success w-100">
+            Register
+          </button>
+        </form>
+        <div className="text-center mt-3">
+          <small>
+            Already have an account?{" "}
+            <Link href="/login" className="text-primary">
+              Login here
+            </Link>
+          </small>
+        </div>
+      </div>
     </div>
   );
 }

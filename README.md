@@ -17,7 +17,7 @@ This is a Next.js + Firebase web store application with authentication, product 
 - **Vercel** (Deployment)
 
 ## Architecture Decisions
-- **Frontend Framework:** React.js was chosen for building a responsive and dynamic UI with reusable components.
+- **Frontend Framework:** Nextjs was chosen for building a responsive and dynamic UI with reusable components.
 - **State Management:** Firebase’s built-in authentication and Firestore’s real-time updates were used, removing the need for a separate state management library like Redux for this version.
 - **Styling:** Bootstrap was used for consistent styling and responsive design out-of-the-box, reducing custom CSS effort.
 - **Hosting & Deployment:** Vercel Deployment was selected for its easy integration with the Nextjs and fast global CDN.

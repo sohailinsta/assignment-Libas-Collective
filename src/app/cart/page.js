@@ -1,6 +1,7 @@
 "use client";
 
 import { useCart } from "../../components/CartContext";
+import Image from "next/image";
 
 export default function CartPage() {
   const { cartItems, removeFromCart } = useCart();
@@ -9,7 +10,9 @@ export default function CartPage() {
     return (
       <div className="container mt-5 text-center">
         <h2>Your Cart is Empty</h2>
-        <p className="text-muted">Looks like you haven't added anything yet.</p>
+        <p className="text-muted">
+          Looks like you haven&apos;t added anything yet.
+        </p>
       </div>
     );
   }
@@ -30,7 +33,7 @@ export default function CartPage() {
             className="list-group-item d-flex align-items-center justify-content-between"
             style={{ gap: "1rem" }}
           >
-            <img
+            <Image
               src={item.images?.[0] || item.imageUrl}
               alt={item.name}
               width={80}

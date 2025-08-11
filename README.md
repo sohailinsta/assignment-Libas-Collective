@@ -34,9 +34,8 @@ This is a Next.js + Firebase web store application with authentication, product 
 
 ## Setup Instructions
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/web-store.git
-   cd web-store
+   git clone https://github.com/sohailinsta/assignment-Libas-Collective.git
+   cd assignment-Libas-Collective
    npm install
    npm run dev
 

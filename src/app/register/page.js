@@ -12,15 +12,18 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // added loading state
 
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
+    setLoading(true); // start loader
     try {
       await register(email, password);
       router.push("/"); // Redirect to home on success
     } catch (err) {
       setError(err.message);
+      setLoading(false); // stop loader on error
     }
   }
 
@@ -36,6 +39,7 @@ export default function RegisterPage() {
             onChange={(e) => setEmail(e.target.value)}
             required
             className="form-control mb-3"
+            disabled={loading}
           />
           <input
             type="password"
@@ -44,10 +48,26 @@ export default function RegisterPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
             className="form-control mb-3"
+            disabled={loading}
           />
           {error && <div className="alert alert-danger">{error}</div>}
-          <button type="submit" className="btn btn-success w-100">
-            Register
+          <button
+            type="submit"
+            className="btn btn-primary w-100"
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                <span
+                  className="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </>
+            ) : (
+              "Register"
+            )}
           </button>
         </form>
         <div className="text-center mt-3">

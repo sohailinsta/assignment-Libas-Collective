@@ -2,7 +2,7 @@
 
 This is a Next.js + Firebase web store application with authentication, product listing, and responsive design for both web and mobile.
 
-## 🚀 Features
+## Features
 - User authentication (Firebase Auth)
 - Product listing from Firestore
 - Responsive design for mobile & desktop
@@ -10,28 +10,33 @@ This is a Next.js + Firebase web store application with authentication, product 
 - SEO-friendly metadata setup
 - Deployed on Vercel
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **Next.js** (React framework)
 - **Firebase** (Auth + Firestore)
-- **Bootstrap** (Styling)
+- **Bootstrap** (Styling & Layout)
 - **Vercel** (Deployment)
 
-## 📐 Architecture Decisions
-- **Next.js App Router** for optimized routing and server-side rendering
-- **Firebase Auth** for easy authentication without custom backend
-- **Firestore** as a NoSQL database for flexible data storage
-- **ProtectedRoute** HOC to prevent unauthenticated access
-- **Responsive-first design** for mobile usability
+## Architecture Decisions
+- **Frontend Framework:** React.js was chosen for building a responsive and dynamic UI with reusable components.
+- **State Management:** Firebase’s built-in authentication and Firestore’s real-time updates were used, removing the need for a separate state management library like Redux for this version.
+- **Styling:** Bootstrap was used for consistent styling and responsive design out-of-the-box, reducing custom CSS effort.
+- **Hosting & Deployment:** Firebase Hosting was selected for its easy integration with the Firebase backend and fast global CDN.
+- **Authentication:** Firebase Authentication was implemented to manage user login and registration securely without writing custom auth logic.
+- **Database:** Cloud Firestore was used for its scalability, real-time updates, and smooth integration with the rest of the Firebase ecosystem.
 
-### Trade-offs Considered
-- Firebase chosen over a custom backend to save development time (less control over server logic)
-- Tailwind CSS chosen over Material UI for faster styling but requires more custom components
-- No server-side admin dashboard in this version due to time constraints
+## Trade-offs Considered
+- **Firebase vs. Custom Backend:** Firebase was selected for rapid development and integrated features, but this limits backend customization and control over server-side logic.
+- **Bootstrap vs. Tailwind/Material UI:** Bootstrap allowed quick layout creation and responsive design but offers less design flexibility than Tailwind and fewer ready-made complex components compared to Material UI.
+- **Real-time Database Updates:** Firestore’s real-time updates improve user experience but may increase read costs for high-traffic apps compared to batched or on-demand data fetching.
+- **Vendor Lock-in:** Relying on Firebase’s ecosystem speeds up development but increases dependency on Google Cloud services. Migrating to another provider in the future would require significant changes.
+- **Scalability Considerations:** Firebase scales well initially but can become costly for large-scale, read-intensive applications without careful optimization.
 
-## 📦 Setup Instructions
+
+## Setup Instructions
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/web-store.git
    cd web-store
    npm install
    npm run dev
+

@@ -20,7 +20,7 @@ This is a Next.js + Firebase web store application with authentication, product 
 - **Frontend Framework:** React.js was chosen for building a responsive and dynamic UI with reusable components.
 - **State Management:** Firebase’s built-in authentication and Firestore’s real-time updates were used, removing the need for a separate state management library like Redux for this version.
 - **Styling:** Bootstrap was used for consistent styling and responsive design out-of-the-box, reducing custom CSS effort.
-- **Hosting & Deployment:** Vercel Hosting was selected for its easy integration with the Nextjs and fast global CDN.
+- **Hosting & Deployment:** Vercel Deployment was selected for its easy integration with the Nextjs and fast global CDN.
 - **Authentication:** Firebase Authentication was implemented to manage user login and registration securely without writing custom auth logic.
 - **Database:** Cloud Firestore was used for its scalability, real-time updates, and smooth integration with the rest of the Firebase ecosystem.
 
